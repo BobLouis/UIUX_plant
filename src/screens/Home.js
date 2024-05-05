@@ -4,7 +4,7 @@ import {TextInput,ScrollView,TouchableOpacity} from 'react-native-gesture-handle
 import { LinearGradient } from 'expo-linear-gradient'
 
 const Home = ({navigation}) => {
-    return(
+    return (
         <View style={{
             backgroundColor:"#FFF",
             flex:1
@@ -80,7 +80,7 @@ const Home = ({navigation}) => {
                </View>
             </LinearGradient>
 
-
+            <ScrollView>
                <View style={{
                    flexDirection:"row",
                    paddingHorizontal:20,
@@ -152,6 +152,8 @@ const Home = ({navigation}) => {
                     >
                         <Image
                             source={require('../images/4.png')}
+                            style={{width:160,height:250,borderRadius:15}}
+                        
                         />
                         <View style={{
                             flexDirection:"row",
@@ -192,6 +194,8 @@ const Home = ({navigation}) => {
                     >
                         <Image
                             source={require('../images/5.png')}
+                            style={{width:160,height:250,borderRadius:15}}
+                        
                         />
                         <View style={{
                             flexDirection:"row",
@@ -232,6 +236,8 @@ const Home = ({navigation}) => {
                     >
                         <Image
                             source={require('../images/6.png')}
+                            style={{width:160,height:250,borderRadius:15}}
+                        
                         />
                         <View style={{
                             flexDirection:"row",
@@ -307,14 +313,29 @@ const Home = ({navigation}) => {
                 >
                     <Image
                         source={require("../images/18.png")}
-                        style={{marginTop:20,marginHorizontal:20}}
+                        style={{
+                            width: 250,
+                            height: 150,
+                            marginTop: 20,
+                            marginHorizontal: 20,
+                            borderRadius: 10   
+                        }}
                     />
                      <Image
                         source={require("../images/19.png")}
-                        style={{marginTop:20,borderRadius:10}}
+                        style={{
+                                width: 250,
+                                height: 150,
+                                marginTop: 20,
+                                marginHorizontal: 20,
+                                borderRadius: 10   
+                            }}
+                    
                     />
                 </ScrollView>
+            </ScrollView>
         </View>
+        
     )
 }
 export default Home;
